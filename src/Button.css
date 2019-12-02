@@ -1,0 +1,31 @@
+.btn1{
+	border: 2px solid black;
+	border-radius: 3px;
+	padding: 18px 24px;
+	margin: 100px 10px;
+
+	position: relative;
+
+	overflow: hidden;
+}
+
+.btn1:focus{
+	outline: none;
+}
+
+.btn1 > .dot{
+	width: 10px;
+	height: 10px;
+	border: 1px solid pink;
+	border-radius: 50%;
+	background: pink;
+	opacity: 0.3;
+
+	position: absolute;
+	animation: 0.4s big forwards;
+}
+
+@keyframes big{
+	0%{transform: scale(0.1)}
+	100%{transform: scale(20)}
+}
